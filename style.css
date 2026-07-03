@@ -632,8 +632,8 @@ img {
 /* Hero Profile Image Styling */
 .hero-image-wrap {
   width: 100%;
-  max-width: 420px;
-  height: 520px;
+  max-width: 380px;
+  aspect-ratio: 3 / 4; /* Standard elegant vertical portrait ratio */
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
@@ -654,6 +654,7 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 15%; /* Crop to perfectly frame the face and shoulders */
   transition: var(--transition-smooth);
 }
 
